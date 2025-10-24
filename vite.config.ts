@@ -15,5 +15,5 @@ export default defineConfig({
     },
     exclude: ['lucide-react'],
   },
-  base: '/My-InvoiceApp/', // GitHub Pages path
+  base: '/My-InvoiceApp', // GitHub Pages path
 });
