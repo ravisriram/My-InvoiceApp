@@ -1,5 +1,6 @@
 {
   "name": "vite-react-typescript-starter",
+  "homepage": "https://ravisriram.github.io/My-InvoiceApp/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -8,9 +9,13 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy":"npm run build",
+    "deploy":"gh-pages -d dist"
   },
   "dependencies": {
+    "crypto-browserify": "^3.12.1",
+    "gh-pages": "^6.3.0",
     "html2canvas": "^1.4.1",
     "jspdf": "^3.0.2",
     "lucide-react": "^0.344.0",
@@ -21,6 +26,8 @@
     "zustand": "^5.0.8"
   },
   "devDependencies": {
+    "@esbuild-plugins/node-globals-polyfill": "^0.2.3",
+    "@esbuild-plugins/node-modules-polyfill": "^0.2.2",
     "@eslint/js": "^9.9.1",
     "@types/react": "^18.3.5",
     "@types/react-dom": "^18.3.0",
