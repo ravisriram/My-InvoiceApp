@@ -7,6 +7,7 @@ import { NodeModulesPolyfillPlugin } from '@esbuild-plugins/node-modules-polyfil
 
 export default defineConfig({
   plugins: [react()],
+  base:"/My-InvoiceApp"
   optimizeDeps: {
     exclude: ['lucide-react'],
     esbuildOptions: {
